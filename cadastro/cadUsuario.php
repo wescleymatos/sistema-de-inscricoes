@@ -56,12 +56,26 @@
 	<div id="body" class="clear">
 		<div id="content" class="column-left">
 			<h2>>>> Cadastro</h2>
-            <div id="texto">
+
             <?php
                 if($retorno == true){
-                    echo "<p><h4>Seu cadastro foi realizado com sucesso!</h4></p>";
+                    echo "<div id='texto'>
+                            <p><h4>Seu cadastro foi realizado com sucesso!</h4></p>
+                          </div>
+                          <table cellspacing='0'>
+                                <tr>
+                                    <td><a href='index.php'><img id='up' src='images/icons/back.png' alt='' title='Voltar para Lista Geral'/><a></td>
+				                </tr>
+                          </table>";
                 } else {
-                    echo "<p><h4>Ocorreu algum problema com a realização do seu cadastro, por favor tentar novamente!</h4></p>";
+                    echo "<div id='texto'>
+                            <p><h4>Ocorreu algum problema com a realização do seu cadastro, por favor tentar novamente!</h4></p>
+                          </div>
+                          <table cellspacing='0'>
+                                <tr>
+                                    <td><a href='inscricao.php'><img id='up' src='images/icons/back.png' alt='' title='Voltar para Lista Geral'/><a></td>
+				                </tr>
+                          </table>";
                 }
             ?>
             </div>

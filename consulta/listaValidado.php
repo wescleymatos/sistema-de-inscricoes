@@ -90,6 +90,11 @@
 			        <div id="texto">
                         <p><h4>Nenhum registro encontrado!</h4></p>
                     </div>
+                    <table cellspacing='0'>
+                        <tr>
+                            <td><a href='consulta/listaGeral.php'><img id='up' src='images/icons/back.png' alt='' title='Voltar para Lista Geral'/><a></td>
+				        </tr>
+                    </table>
             <?php   }
                 } else {
             ?>
