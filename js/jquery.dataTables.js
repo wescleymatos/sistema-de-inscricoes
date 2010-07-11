@@ -854,10 +854,10 @@
 			 */
 			this.oLanguage = {
 				"sProcessing": "Processando...",
-				"sLengthMenu": "Mostrar _MENU_ entradas",
+				"sLengthMenu": "Mostrar _MENU_ resultados",
 				"sZeroRecords": "No matching records found",
-				"sInfo": "Mostrar de _START_ a _END_ de _TOTAL_ entradas",
-				"sInfoEmpty": "Mostrar de 0 a 0 de 0 entradas",
+				"sInfo": "Mostrar de _START_ a _END_ de _TOTAL_ resultados",
+				"sInfoEmpty": "Mostrar de 0 a 0 de 0 resultados",
 				"sInfoFiltered": "(filtered from _MAX_ total entries)",
 				"sInfoPostFix": "",
 				"sSearch": "Buscar:",
