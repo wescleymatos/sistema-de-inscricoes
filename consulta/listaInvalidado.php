@@ -29,7 +29,7 @@
 <link rel="stylesheet" href="../css/fx.slide.css" type="text/css" media="screen" />
 <script type="text/javascript" src="../js/jquery.js"></script>
 <script type="text/javascript" src="../js/menu.js"></script>
-<script type="text/javascript" src="../js/jquery.dataTables.min.js"></script>
+<script type="text/javascript" src="../js/jquery.dataTables.js"></script>
 <script type="text/javascript">
     $(document).ready(function() {
 	    oTable = $('#tabela').dataTable({
