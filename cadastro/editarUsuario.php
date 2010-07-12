@@ -79,7 +79,7 @@ session_start();
                           </table>";
                 }
             ?>
-            </div>
+
 		</div>
 	</div>
 
