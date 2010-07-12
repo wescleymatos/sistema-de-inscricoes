@@ -25,11 +25,11 @@
 <script type="text/javascript">
     $(document).ready(function(){
         $("#username").focus(function(){
-            $("#username").css("background", "#FFF197");
+            $("#username").css("background", "#EFEEEE");
         });
 
         $("#pwd").focus(function(){
-            $("#pwd").css("background", "#FFF197");
+            $("#pwd").css("background", "#EFEEEE");
         });
     });
 </script>
@@ -43,14 +43,12 @@
 	<?php include('incs/menu.php'); ?>
 
 	<div id="body" class="clear">
-		<div id="content" class="column-left">
-		<h2>>>> Login</h2>
-			<br />
+		<div>
 			<div id="divLogin">
                 <form action="incs/validaLogin.php" method="post" id="formLogin">
-                    <p><label>Login</label><br />
+                    <p><label>Username</label><br />
                     <input type="text" id="username" name="username"/></p>
-                    <p><label>Senha</label><br />
+                    <p><label>Password</label><br />
                     <input type="password" id="pwd" name="pwd"/></p>
                     <input type="submit" value="Log in" id="logar" name="logar"/>
                 </form>

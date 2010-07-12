@@ -5,7 +5,7 @@
 
     if(Session::getSession("userPerfil") != null && Session::getSession("userLogin") != null) {
         Session::closeSession();
-        echo "<script>window.location=('../index.php')</script>";
+        echo "<script>window.location=('../login.php')</script>";
     } else {
         echo "<script>window.location=history.back();</script>";
     }
