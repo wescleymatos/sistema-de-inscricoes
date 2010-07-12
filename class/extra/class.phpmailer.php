@@ -699,7 +699,7 @@ class PHPMailer {
    * @return bool
    */
   protected function SmtpSend($header, $body) {
-    require_once $this->PluginDir . 'Smtp.class.php';
+    require_once $this->PluginDir . 'class.smtp.php';
     $bad_rcpt = array();
 
     if(!$this->SmtpConnect()) {
@@ -2318,4 +2318,3 @@ class phpmailerException extends Exception {
   }
 }
 ?>
-

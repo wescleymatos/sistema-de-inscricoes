@@ -12,12 +12,17 @@
         }
     }
 
+    require_once('../class/extra/class.phpmailer.php');
+
     new Session;
     $usuarioDao = new UsuarioDao();
 
     $retorno = $usuarioDao->validarUsuario($_POST['usuario'], $_POST['validado']);
 
     if($retorno == true){
+
+        require_once('../incs/emailValidacao.php');
+
         echo "<script>window.location=('../consulta/listaGeral.php')</script>";
     }
 ?>
