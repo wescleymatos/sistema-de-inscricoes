@@ -6,19 +6,19 @@
                 $mail->Port = 465;
                 $mail->SMTPAuth = true; // Usa autenticação SMTP? (opcional)
                 $mail->SMTPSecure = "ssl";
-                $mail->Username = "wescleymatos@gmail.com"; // Usuário do servidor SMTP
-                $mail->Password = "luana130207eosso"; // Senha do servidor SMTP
+                $mail->Username = "ignazanatal@gmail.com"; // Usuário do servidor SMTP
+                $mail->Password = "naza2009web"; // Senha do servidor SMTP
 
                 // Define o remetente
                 // =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
-                $mail->From = "conferencia@nazarenonatal.com.br"; // Seu e-mail
+                $mail->From = "ignazanatal@gmail.com"; // Seu e-mail
                 $mail->FromName = "Conferência 2010"; // Seu nome
 
                 // Define os destinatário(s)
                 // =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
                 //$mail->AddAddress('fulano@dominio.com.br', 'Fulano da Silva');
                 $mail->AddAddress($_POST['email']);
-                //$mail->AddCC('ciclano@site.net', 'Ciclano'); // Copia
+                $mail->AddCC('conferencia@nazarenonatal.com.br'); // Copia
                 //$mail->AddBCC('fulano@dominio.com.br', 'Fulano da Silva'); // Cópia Oculta
 
                 // Define os dados técnicos da Mensagem
@@ -28,9 +28,14 @@
 
                 // Define a mensagem (Texto e Assunto)
                 // =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
-                $mail->Subject  = "Cadastro Conferência Missionária 2010"; // Assunto da mensagem
-                $mail->Body = "Olá, sua inscrição foi validada!!";
-                $mail->AltBody = "Este é o corpo da mensagem de teste, em Texto Plano! \r\n <img src='http://blog.thiagobelem.net/wp-includes/images/smilies/icon_smile.gif' alt=':)' class='wp-smiley'> ";
+                $mail->Subject  = "Validação Conferência Missionária 2010"; // Assunto da mensagem
+                $mail->Body = "<p>Ol&aacute; " . $_POST['nome'] . ", seu cadastro foi validado com sucesso!</p>
+                               <p>Seja bem vindo &agrave; 1&deg; Confer&ecirc;ncia Mission&aacute;ria &Aacute;rea Norte.</p>
+                ";
+
+                $mail->AltBody = "Olá" . $_POST['nome'] . ", seu cadastro foi validado com sucesso!
+                Seja bem vindo à 1° Conferência Missionária Área Norte.
+                ";
 
                 // Define os anexos (opcional)
                 // =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=

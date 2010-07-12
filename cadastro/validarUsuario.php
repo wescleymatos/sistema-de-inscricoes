@@ -24,6 +24,8 @@
         require_once('../incs/emailValidacao.php');
 
         echo "<script>window.location=('../consulta/listaGeral.php')</script>";
+    } else {
+         echo "<script>window.location=('../error/erroValidar.php')</script>";
     }
 ?>
 
