@@ -33,6 +33,9 @@
 <script type="text/javascript">
     $(document).ready(function() {
 	    oTable = $('#tabela').dataTable({
+            "bPaginate": true,
+            "bLengthChange": true,
+            "iDisplayLength": 25,
 		    "bJQueryUI": true,
 		    "sPaginationType": "full_numbers"
 	    });
