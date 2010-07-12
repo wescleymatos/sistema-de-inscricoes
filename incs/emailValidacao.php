@@ -28,35 +28,16 @@
 
                 // Define a mensagem (Texto e Assunto)
                 // =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
-                $mail->Subject  = "Cadastro na Conferência Missionária 2010"; // Assunto da mensagem
-                $mail->Body = " <p>Ol&aacute; " . $_POST['nome'] . ", seu cadastro foi realizado com sucesso.</p>
-                                <p>Para confirmar sua inscri&ccedil;&atilde;o,
-                                realize um dep&oacute;sito banc&aacute;rio no valor de 10,00 R$ (dez reais) na conta informada abaixo:</p><br />
-                                <p>Conta: <strong></strong></p>
-                                <p>Banco: <strong></strong></p>
-                                <p>Destinat&aacute;rio: <strong></strong></p>
-                                <br />
-                                <p><strong>IMPORTANTE!!!</strong></p>
-                                <p>Se faz necess&aacute;rio o envio do comprovante de depósito scaneado ou as informa&ccedil;&otilde;es contidas no mesmo para os emails:</p>
-                                <p><strong>conferencia@nazarenonatal.com.br</strong></p>
-                                <p><strong>ignazanatal@gmail.com</strong></p>";
+                $mail->Subject  = "Validação Conferência Missionária 2010"; // Assunto da mensagem
+                $mail->Body = "<p>Ol&aacute; " . $_POST['nome'] . ", seu cadastro foi validado com sucesso!</p>
+                               <p>Seja bem vindo &agrave; 1&deg; Confer&ecirc;ncia Mission&aacute;ria &Aacute;rea Norte.</p>
+                ";
 
-                $mail->AltBody = "Olá " . $_POST['nome'] . ", Seu cadastro foi realizado com sucesso.
-Para confirmar sua inscrição,
-realize um depósito bancário no valor de 10,00 R$ (dez reais) na conta informada abaixo:
-Conta:
-Banco:
-Destinatário:
-
-
-IMPORTANTE!!!
-Para validar seu cadastro se faz necessário o envio do comprovante de depósito ou as informações contidas no mesmo para os emails:
-
-conferencia@nazarenonatal.com.br
-ignazanatal@gmail.com";
+                $mail->AltBody = "Olá" . $_POST['nome'] . ", seu cadastro foi validado com sucesso!
+                Seja bem vindo à 1° Conferência Missionária Área Norte.
+                ";
 
                 // Define os anexos (opcional)
-                // =-=-=-=-=-=-=-=-=-=-=-=-=-=-
                 // =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
                 //$mail->AddAttachment("c:/temp/documento.pdf", "novo_nome.pdf");  // Insere um anexo
 

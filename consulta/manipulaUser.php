@@ -218,13 +218,14 @@
                     <input type="hidden" id="usuarioValida" name="usuario" value="<?php echo $retorno->getIdUsuario(); ?>" />
                     <input type="hidden" id="validadoValida" name="validado" value="1" />
                     <input type="hidden" id="nomeValida" name="nome" value="<?php echo utf8_encode($retorno->getNome()); ?>" />
+                    <input type="hidden" id="emailValida" name="email" value="<?php echo $retorno->getEmail(); ?>" />
                 </form>
             </div>
             <div id="divEditar" class="divEditar">
                 <fieldset>
 				<form  method="post" id="formEdita">
 				        <input type="hidden" id="usuario" name="usuario" value="<?php echo $retorno->getIdUsuario(); ?>" />
-                        
+
                         <p><label for="email">E-mail</label>
                           <input type="text" name="email" id="email" value="<?php echo $retorno->getEmail(); ?>" /></p>
                         <p><label for="nome">Nome</label>

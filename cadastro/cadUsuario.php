@@ -10,7 +10,10 @@
         }
     }
 
+    require_once('../class/extra/class.phpmailer.php');
+
     new Session;
+
 
     include('../incs/data.php');
 
@@ -54,26 +57,38 @@
 	<?php include('../incs/menu.php'); ?>
 
 	<div id="body" class="clear">
-		<div id="content" class="column-left">
+		<div>
 			<h2>>>> Cadastro</h2>
 
             <?php
                 if($retorno == true){
-                    echo "<div id='texto'>
+            ?>
+                          <div id='texto'>
                             <p><h4>Seu cadastro foi realizado com sucesso!</h4></p>
+                            <p><h4>Por favor, verificar sua caixa de email com a confirmação do seu cadastro e as informações para a realização do depósito bancário.</h4></p>
+                            <p><h4>Caso você não receba o email, entre em contato conosco enviado nome e email cadastrados para:</h4></p>
+                            <p>
+                                <ul>
+                                    <li><h4>conferencia@nazarenonatal.com.br</h4></li>
+                                    <li><h4>ignazanatal@gmail.com</h4></li>
+                                </ul>
+                            <p>
                           </div>
                           <table cellspacing='0'>
                                 <tr>
-                                    <td><a href='index.php'><img id='up' src='images/icons/back.png' alt='' title='Voltar para Lista Geral'/><a></td>
+                                    <td><a href='index.php'><img id='up' src='images/icons/back.png' alt='' title='Voltar para a Home'/><a></td>
 				                </tr>
-                          </table>";
+                          </table>
+            <?php
+                require_once('../incs/emailCadastro.php');
+
                 } else {
                     echo "<div id='texto'>
                             <p><h4>Ocorreu algum problema com a realização do seu cadastro, por favor tentar novamente!</h4></p>
                           </div>
                           <table cellspacing='0'>
                                 <tr>
-                                    <td><a href='inscricao.php'><img id='up' src='images/icons/back.png' alt='' title='Voltar para Lista Geral'/><a></td>
+                                    <td><a href='inscricao.php'><img id='up' src='images/icons/back.png' alt='' title='Voltar para página de inscrições'/><a></td>
 				                </tr>
                           </table>";
                 }
