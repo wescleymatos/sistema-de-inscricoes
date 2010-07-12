@@ -6,12 +6,12 @@
                 $mail->Port = 465;
                 $mail->SMTPAuth = true; // Usa autenticação SMTP? (opcional)
                 $mail->SMTPSecure = "ssl";
-                $mail->Username = "ignazanatal@gmail.com"; // Usuário do servidor SMTP
-                $mail->Password = "naza2009web"; // Senha do servidor SMTP
+                $mail->Username = ""; // Usuário do servidor SMTP
+                $mail->Password = ""; // Senha do servidor SMTP
 
                 // Define o remetente
                 // =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
-                $mail->From = "ignazanatal@gmail.com"; // Seu e-mail
+                $mail->From = ""; // Seu e-mail
                 $mail->FromName = "Conferência 2010"; // Seu nome
 
                 // Define os destinatário(s)
