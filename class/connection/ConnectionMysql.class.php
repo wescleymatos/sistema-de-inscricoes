@@ -6,7 +6,7 @@
 
         private static $dsn = "mysql:host=localhost;port=3306;dbname=mni";
         private static $user = "root";
-        private static $pass = "luana";
+        private static $pass = "";
 
         public function __construct(){
             parent::__construct ();

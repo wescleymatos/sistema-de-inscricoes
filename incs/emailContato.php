@@ -9,7 +9,7 @@
                 $mail->SMTPAuth = true; // Usa autenticação SMTP? (opcional)
                 $mail->SMTPSecure = "ssl";
                 $mail->Username = "ignazanatal@gmail.com"; // Usuário do servidor SMTP
-                $mail->Password = "naza2009web"; // Senha do servidor SMTP
+                $mail->Password = ""; // Senha do servidor SMTP
 
                 // Define o remetente
                 // =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
