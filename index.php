@@ -23,9 +23,16 @@
 <link rel="stylesheet" href="css/fx.slide.css" type="text/css" media="screen" />
 <script type="text/javascript" src="js/jquery.js"></script>
 <script type="text/javascript" src="js/menu.js"></script>
-<script type="text/javascript" src="js/mootools-1.2-core-yc.js"></script>
-<script type="text/javascript" src="js/mootools-1.2-more.js"></script>
-<script type="text/javascript" src="js/fx.slide.js"></script>
+<script type="text/javascript" src="js/easySlider1.5.js"></script>
+<script type="text/javascript">
+	$(document).ready(function(){
+		$("#slider").easySlider({
+		    controlsShow: false,
+		    continuous: true,
+		    auto: true
+		});
+	});
+</script>
 </head>
 <body>
 <?php include('incs/panel.php'); ?>
@@ -37,9 +44,16 @@
 	<?php include('incs/menu.php'); ?>
 
 	<div id="body" class="clear">
-		<div id="content" class="column-left">
-			<h2>>>> Home</h2>
-
+		<div>
+			    <div id="slider">
+		            <ul>
+			            <li><a><img src="images/slide/1.jpg" alt="" /></a></li>
+			            <li><a><img src="images/slide/2.jpg" alt="" /></a></li>
+			            <li><a><img src="images/slide/3.jpg" alt="" /></a></li>
+			            <li><a><img src="images/slide/4.jpg" alt="" /></a></li>
+			            <li><a><img src="images/slide/5.jpg" alt="" /></a></li>
+		            </ul>
+	            </div>
 		</div>
 	</div>
 

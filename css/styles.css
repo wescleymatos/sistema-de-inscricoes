@@ -463,3 +463,14 @@ table tr td img {
 	border:2px solid #ddd;
 }
 
+#slider ul, #slider li{
+		margin:0;
+		padding:0;
+		list-style:none;
+}
+#slider li{
+		width:860px;
+		height:241px;
+		overflow:hidden;
+}
+

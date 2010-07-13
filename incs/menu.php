@@ -9,6 +9,7 @@
         <li><a href="informacao.php"><span>Informações</span></a></li>
         <li><a href="programacao.php" class="parent"><span>Programação</span></a></li>
         <li><a href="inscricao.php"><span>Inscrições</span></a></li>
+        <li><a href="contato.php" class="parent"><span>Contato</span></a></li>
         <li><a class="parent"><span>Relatórios</span></a>
             <div><ul>
                 <li><a href="consulta/listaGeral.php"><span>Lista Geral</span></a></li>
@@ -30,6 +31,7 @@
         <li><a href="informacao.php"><span>Informações</span></a></li>
         <li><a href="programacao.php" class="parent"><span>Programação</span></a></li>
         <li><a href="inscricao.php"><span>Inscrições</span></a></li>
+        <li><a href="contato.php" class="parent"><span>Contato</span></a></li>
     </ul>
 </div>
 <?php
