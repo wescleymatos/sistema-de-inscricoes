@@ -41,7 +41,7 @@
 		    	<li class="left">&nbsp;</li>
 		        <li>Bem Vindo!</li>
 				<li>|</li>
-				<li><a id="toggleLogin">Login</a></li>
+				<li><a id="toggleLogin" href="login.php">Login</a></li>
 			</ul> <!-- / login -->
     </div> <!-- / top -->
 </div>

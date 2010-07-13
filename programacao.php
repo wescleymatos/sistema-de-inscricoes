@@ -14,9 +14,6 @@
 <link rel="stylesheet" href="css/fx.slide.css" type="text/css" media="screen" />
 <script type="text/javascript" src="js/jquery.js"></script>
 <script type="text/javascript" src="js/menu.js"></script>
-<script type="text/javascript" src="js/mootools-1.2-core-yc.js"></script>
-<script type="text/javascript" src="js/mootools-1.2-more.js"></script>
-<script type="text/javascript" src="js/fx.slide.js"></script>
 </head>
 <body>
 <?php include('incs/panel.php'); ?>

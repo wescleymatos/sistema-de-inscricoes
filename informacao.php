@@ -14,9 +14,6 @@
 <link rel="stylesheet" href="css/fx.slide.css" type="text/css" media="screen" />
 <script type="text/javascript" src="js/jquery.js"></script>
 <script type="text/javascript" src="js/menu.js"></script>
-<script type="text/javascript" src="js/mootools-1.2-core-yc.js"></script>
-<script type="text/javascript" src="js/mootools-1.2-more.js"></script>
-<script type="text/javascript" src="js/fx.slide.js"></script>
 </head>
 <body>
 <?php include('incs/panel.php'); ?>
@@ -41,12 +38,6 @@
                             <li><p><strong>Importante: </strong> Envolvimento de todas as igrejas de Natal na organização, através de todos os ministérios.</p></li>
                             <li><p><strong>Valor da Inscrição: </strong> R$10,00</p></li>
                         </ul>
-                <h3>Entre em contato:</h3>
-                <p>
-                <blockquote>Daise Silva: (84)3221-2421 ou 3201-1501 ou daysegato@hotmail.com</blockquote><br />
-                <blockquote>Ricardo Papachristodoulou: (84)3221-2421 ou 3201-1501 ou distritoset@hotmail.com</blockquote><br />
-                <blockquote>Carol Beltrão Papachristodoulou: (84)8803-4501 ou carolbeltrao@gmail.com</blockquote>
-                </p>
             </div>
 		</div>
 	</div>
